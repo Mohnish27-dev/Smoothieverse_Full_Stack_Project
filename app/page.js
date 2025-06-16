@@ -1,103 +1,85 @@
 import Image from "next/image";
-
+import Link from "next/link";
+export async function generateMetadata() {
+  return {
+    title: "SmoothieVerse | Home - Fund Your Dreams with Smoothies!",
+  };
+}
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-geist-mono)] font-semibold">
-              app/page.js
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
+    <div>
+      <div className="flex justify-center text-white">
+        <div className="flex flex-col items-center mt-20">
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+          <h1 className="text-4xl font-bold mb-4">Get Me A Smoothie <span>🥤</span></h1>
+
+          <p className="text-lg mb-8">
+            Fund your project with smoothie and make your ideas come true!
+          </p>
+          <div className="buttons flex">
+            <Link href={"/login"}>
+            
+            <button  type="button" className="text-white bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2">Start Here</button>
+            </Link>
+            <Link href={"/about"}>
+            
+            <button type="button" className="text-white bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2">Read More</button>
+            </Link>
+          </div>
+          <Image
+            src="/icons/smoothie_icon.png"
+            alt="Smoothie Image"
+            width={150}
+            height={150}
+            className="rounded-full shadow-lg"
+          />
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+      </div>
+      <div className="line">
+        <div className="w-full h-0.5 bg-gradient-to-r from-purple-600 to-blue-500 mt-10"></div>
+      </div>
+
+      <div className="text-white ">
+        <h3 className=" text-center font-bold my-4 text-3xl">Your Fans can buy you a smoothie</h3>
+        <div className="flex flex-col sm:flex-row gap-6 justify-center md:gap-48 md:ml-20 items-center ">
+          <div className="w-full sm:w-1/3 flex flex-col items-center">
+            <img className="rounded-full h-26 w-28 bg-gray-300" src="/icons/man.gif" alt="man image" />
+            <p>Fans want to help</p>
+            <p className="text-sm">Your fans are availabe for you to help you</p>
+
+          </div>
+          <div className="w-full sm:w-1/3 flex flex-col items-center">
+            <img className="  h-26 w-28 bg-gray-300 rounded-full" src="/icons/coin.gif" alt="coin image" width={70} />
+            <p>Coin for Smoothie</p>
+            <p className="text-sm"> 
+            Your fans can buy you a smoothie with their coins
+            </p>
+
+
+          </div>
+          <div className="w-full sm:w-1/3 flex flex-col items-center">
+            <img className=" h-26 w-28 bg-gray-300 rounded-full" src="/icons/group.png" alt="group image" width={70} />
+            <p>
+              Fans are here to help you
+            </p>
+            <p className="text-sm ">
+              Group of fans can help you to get a smoothie
+            </p>
+
+          </div>
+        </div>
+
+      </div>
+      <div className="line">
+        <div className="w-full h-0.5 bg-gradient-to-r from-purple-600 to-blue-500 mt-10"></div>
+      </div>
+      <div className="text-white flex flex-col items-center mt-10">
+        <h3 className=" text-center font-bold my-4 text-3xl">Learn More</h3>
+        <iframe className="md:w-[560px] w-1/2 h-[315px]"  src="https://www.youtube.com/embed/CJN1n3fId_A?si=mv1-mgiL6cN-EKVQ" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
+
+
+      </div>
+
     </div>
   );
 }

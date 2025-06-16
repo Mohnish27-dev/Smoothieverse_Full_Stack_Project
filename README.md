@@ -1,36 +1,93 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 🥤 SmoothieVerse Crowdfunding Platform
 
-## Getting Started
+Welcome to **SmoothieVerse** – a modern, visually stunning crowdfunding platform where creators and supporters connect over the love of smoothies! Launch your campaign, receive support, and make your dreams come true.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## 🚀 Project Description
+SmoothieVerse is a full-stack web application that enables users to create profiles, launch fundraising campaigns, and receive payments securely via Razorpay. Supporters can easily contribute and leave messages, while creators manage their campaigns through a beautiful dashboard.
+
+---
+
+## 🛠️ Tech Stack
+- **Frontend:** Next.js 14, React, Tailwind CSS
+- **Backend:** Next.js API Routes, Node.js
+- **Database:** MongoDB (Mongoose ODM)
+- **Authentication:** NextAuth.js (Google, GitHub OAuth)
+- **Payments:** Razorpay
+- **Other:** React Toastify, modern SVG/animated assets
+
+---
+
+## ✨ Features
+- User authentication (Google, GitHub)
+- User profile and dashboard
+- Launch and manage crowdfunding campaigns
+- Secure payments via Razorpay
+- Public supporter wall with messages
+- Responsive, modern UI with dark theme
+- Legal pages: Privacy Policy, Terms, Refund Policy
+- Contact form
+
+---
+
+## 📸 Screenshots
+
+
+| Home Page | Payment Page 
+|-----------|-----------
+| ![Home](public/screenshots/home.png) | ![Payment Page](public/screenshots/payment.png) |
+
+---
+
+## ⚙️ Environment Variables
+Create a `.env.local` file in the root directory and add the following:
+```
+MONGODB_URI=mongodb_connection_string GOOGLE_ID=oogle_client_id GOOGLE_SECRET=client_secret GITHUB_ID=github_client_id GITHUB_SECRET=github_client_secret NEXTAUTH_URL=http://localhost:3000 NEXT_PUBLIC_KEY_ID=your_razorpay_key_id KEY_SECRET=your_razorpay_key_secret NEXT_PUBLIC_URL=http://localhost:3000
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🛠️ Installation
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/Mohnish27-dev/smoothieverse.git
+   cd smoothieverse
 
-## Learn More
+2. **Install dependencies**
+   ```
+   npm install
+   or
+   yarn install
+   ```
+3. Add environment variables:
+Copy .env.example to .env.local and fill in your credentials.
+4. Run MongoDB:
+Make sure MongoDB is running locally or use a cloud provider (e.g. MongoDB Atlas).
 
-To learn more about Next.js, take a look at the following resources:
+## ▶️ Running Locally
+```
+   npm run dev
+   or
+   yarn dev
+   ```
+Visit http://localhost:3000 in your browser.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 💡 Usage / Examples
+- Sign up with Google or GitHub
+- Create your profile and set up your campaign
+- Share your campaign link with supporters
+- Receive payments and see messages on your dashboard
+- Manage your profile and view supporter history
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+--- 
+## 🤝 Contributing
+Pull requests are welcome! For major changes, please open an issue first to discuss what you would like to change.
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 🌐 Connect
+- <a href="https://github.com/Mohnish27-dev">GitHub</a>
+- <a href="https://www.linkedin.com/in/mohnish-pamnani-595a81284/">LinkedIn</a>
+- <a href="mailto:mohnishpamnani08@gmail.com">Email</a>
