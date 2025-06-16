@@ -43,7 +43,15 @@ SmoothieVerse is a full-stack web application that enables users to create profi
 ## ⚙️ Environment Variables
 Create a `.env.local` file in the root directory and add the following:
 ```
-MONGODB_URI=mongodb_connection_string GOOGLE_ID=oogle_client_id GOOGLE_SECRET=client_secret GITHUB_ID=github_client_id GITHUB_SECRET=github_client_secret NEXTAUTH_URL=http://localhost:3000 NEXT_PUBLIC_KEY_ID=your_razorpay_key_id KEY_SECRET=your_razorpay_key_secret NEXT_PUBLIC_URL=http://localhost:3000
+- MONGODB_URI=mongodb_connection_string
+- GOOGLE_ID=oogle_client_id
+- GOOGLE_SECRET=client_secret
+- GITHUB_ID=github_client_id
+- GITHUB_SECRET=github_client_secret
+- NEXTAUTH_URL=http://localhost:3000
+- NEXT_PUBLIC_KEY_ID=your_razorpay_key_id
+- KEY_SECRET=your_razorpay_key_secret
+- NEXT_PUBLIC_URL=http://localhost:3000
 ```
 
 
