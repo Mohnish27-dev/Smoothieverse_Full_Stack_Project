@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 export default function AboutPage() {
     return (
@@ -9,7 +10,13 @@ export default function AboutPage() {
                     Welcome to <span className="font-bold text-purple-400">SmoothieVerse</span> – the platform where your dreams get the boost they deserve! Whether you’re raising funds for a creative project, a personal cause, or a community initiative, we make it easy, secure, and fun.
                 </p>
                 <div className="flex justify-center mb-4 sm:mb-6">
-                    <img src="/icons/smoothie_icon.png" alt="Smoothie Icon" className="w-20 h-20 sm:w-24 sm:h-24 rounded-full border-4 border-purple-400 shadow-lg" />
+                    <Image
+                        src="/icons/smoothie_icon.png"
+                        alt="Smoothie Icon"
+                        width={96}
+                        height={96}
+                        className="w-20 h-20 sm:w-24 sm:h-24 rounded-full border-4 border-purple-400 shadow-lg"
+                    />
                 </div>
                 <ul className="list-disc list-inside text-left text-gray-300 mb-4 sm:mb-6 space-y-2 text-sm sm:text-base">
                     <li><span className="font-semibold text-purple-300">Simple & Fast:</span> Launch your campaign in minutes and start receiving support instantly.</li>
