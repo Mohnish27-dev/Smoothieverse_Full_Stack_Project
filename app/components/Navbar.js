@@ -12,7 +12,7 @@ const Navbar = () => {
     return (
         <nav className='bg-slate-950 text-white flex justify-between items-center '>
             <div className="logo font-bold text-xl py-4 px-2 ">
-                <Link href={"/"} className='max-[385px]:flex'><span>🥤</span>SmoothieVerse</Link>
+                <Link href={"/"} className='max-[467px]:flex'><span>🥤</span>SmoothieVerse</Link>
 
             </div>
             <div className='relative max-[385px]:flex'>
