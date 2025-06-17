@@ -30,7 +30,7 @@ const authoptions = NextAuth({
     async signIn({ user, account, profile, email, credentials }) {
       if (account.provider === "github" || account.provider === "google"||account.provider==="twitter") {
         //connect to database and save user
-        const connectDB = await mongoose.connect("mongodb://localhost:27017/smoothieverse")
+        const connectDB = await mongoose.connect(process.env.MONGODB_URI)
         // Check if user already exists
         const existingUser = await User.findOne({ email: user.email });
         if (!existingUser) {
