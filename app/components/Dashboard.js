@@ -19,8 +19,8 @@ const Dashboard = () => {
       name: u?.name || '',
       email: u?.email || '',
       username: u?.username || '',
-      razorpayKey: u?.razorpayKey || '',
-      razorpaySecret: u?.razorpaySecret || '',
+      razorpayKey:'',
+      razorpaySecret: '',
       profilePic: u?.profilePic || '',
       coverPic: u?.coverPic || ''
     });
@@ -49,7 +49,7 @@ const Dashboard = () => {
       razorpayKey: formData.razorpayKey || process.env.NEXT_PUBLIC_KEY_ID || "",
       razorpaySecret: formData.razorpaySecret || process.env.NEXT_PUBLIC_KEY_SECRET || "",
     };
-    let a = await updateProfile(formData, session.user.name)
+    let a = await updateProfile(updatedFormData, session.user.name)
     toast.success('Profile updated successfully!');
   }
 
