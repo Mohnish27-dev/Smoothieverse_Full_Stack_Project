@@ -121,7 +121,9 @@ const PaymentPage = ({ username }) => {
                         {payments.map((payment, index) => {
                             return <div key={index} className='flex items-center gap-4 py-2 w-auto'>
                                 <img src="/icons/avtar.gif" width={33} height={33} alt="" />
-                                <p className='text-sm sm:text-base'>{payment.name} donated <span className='font-bold'>₹{payment.amount / 100}</span> with a message "{payment.message}"</p>
+                                <p className='text-sm sm:text-base'>
+                                    {payment.name} donated <span className='font-bold'>₹{payment.amount / 100}</span> with a message &quot;{payment.message}&quot;
+                                </p>
                             </div>
                         })}
                     </div>
