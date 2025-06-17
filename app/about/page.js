@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-
+import Link from "next/link";
 export default function AboutPage() {
     return (
         <div className="min-h-screen bg-gradient-to-br from-purple-900 via-indigo-900 to-blue-900 flex flex-col items-center justify-center text-white px-2 sm:px-4 py-8 sm:py-16">
@@ -25,7 +25,11 @@ export default function AboutPage() {
                     <li><span className="font-semibold text-purple-300">Community Driven:</span> Join a vibrant community of changemakers and backers.</li>
                 </ul>
                 <div className="text-center">
-                    <a href="/" className="inline-block px-4 py-2 sm:px-6 sm:py-3 bg-purple-600 hover:bg-purple-800 text-white font-bold rounded-full shadow-lg transition-all duration-200 text-sm sm:text-base">Back to Home</a>
+                    <Link href="/" >
+                        <a className="inline-block px-4 py-2 sm:px-6 sm:py-3 bg-purple-600 hover:bg-purple-800 text-white font-bold rounded-full shadow-lg transition-all duration-200 text-sm sm:text-base">
+                            Back to Home
+                        </a>
+                    </Link>
                 </div>
             </div>
         </div>
