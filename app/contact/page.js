@@ -18,10 +18,10 @@ export default function ContactPage() {
     <div className="min-h-screen bg-gradient-to-br from-purple-900 via-indigo-900 to-blue-900 flex flex-col items-center justify-center px-2 py-10 text-white">
       <div className="w-full max-w-xl bg-black bg-opacity-70 rounded-3xl shadow-2xl p-8 border border-purple-700">
         <h1 className="text-4xl sm:text-5xl font-extrabold mb-4 text-center text-purple-300 drop-shadow-lg">Contact Us</h1>
-        <p className="text-lg mb-8 text-center text-gray-200">We'd love to hear from you! Whether you have a question, feedback, or just want to say hi, fill out the form below and we'll get back to you soon.</p>
+        <p className="text-lg mb-8 text-center text-gray-200">We&apos;d love to hear from you! Whether you have a question, feedback, or just want to say hi, fill out the form below and we&apos;ll get back to you soon.</p>
         {submitted ? (
           <div className="text-center text-green-400 font-bold text-xl py-8">
-            Thank you for reaching out! We'll get back to you soon.
+            Thank you for reaching out! We&apos;ll get back to you soon.
           </div>
         ) : (
           <form className="flex flex-col gap-5" onSubmit={handleSubmit}>
