@@ -19,7 +19,7 @@ const Footer = () => {
 
         <div className="flex justify-center gap-4 mb-4">
            <a
-            href="https://github.com/your-github-username"
+            href="https://github.com/Mohnish27-dev"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:scale-110 flex gap-2 transition-transform"
@@ -38,7 +38,7 @@ const Footer = () => {
             <p className='hover:text-gray-400'>GitHub</p>
           </a>
             <a
-            href="https://linkedin.com/in/your-linkedin-username"
+            href="https://linkedin.com/in/mohnish-pamnani-595a81284/"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:scale-110 flex gap-2 transition-transform"
