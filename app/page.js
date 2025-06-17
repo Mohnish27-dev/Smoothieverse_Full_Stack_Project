@@ -11,9 +11,9 @@ export default function Home() {
       <div className="flex justify-center text-white">
         <div className="flex flex-col items-center mt-20">
 
-          <h1 className="text-4xl font-bold mb-4">Get Me A Smoothie <span>🥤</span></h1>
+          <h1 className="text-4xl font-bold mb-4 max-[390px]:text-center">Get Me A Smoothie <span>🥤</span></h1>
 
-          <p className="text-lg mb-8">
+          <p className="text-lg mb-8 max-[515px]:text-center">
             Fund your project with smoothie and make your ideas come true!
           </p>
           <div className="buttons flex">
