@@ -1,4 +1,3 @@
-import 'dotenv/config'
 import NextAuth from 'next-auth'
 import GitHubProvider from "next-auth/providers/github";
 import TwitterProvider from "next-auth/providers/twitter";
