@@ -8,8 +8,8 @@ import connectDb from "../utils/connectDb";
 export const initiate = async (amount, user_name, paymentform) => {
     await connectDb();
     const user = await User.findOne({ username: user_name });
-    const secret = user.razorpaySecret
-    const key= user.razorpayKey
+    const secret = user.razorpaySecret || process.env.NEXT_PUBLIC_KEY_SECRET
+    const key = user.razorpayKey || process.env.NEXT_PUBLIC_KEY_ID
 
     var instance = new Razorpay({ key_id: key, key_secret: secret});
     let options = {
