@@ -1,3 +1,4 @@
+import 'dotenv/config'
 import NextAuth from 'next-auth'
 import GitHubProvider from "next-auth/providers/github";
 import TwitterProvider from "next-auth/providers/twitter";
@@ -5,6 +6,7 @@ import mongoose from 'mongoose'
 import GoogleProvider from "next-auth/providers/google";
 import User from '@/models/User';
 
+console.log("SECRET:", process.env.NEXTAUTH_SECRET)
 const authoptions = NextAuth({
 
   secret: process.env.NEXTAUTH_SECRET,
